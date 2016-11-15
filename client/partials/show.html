@@ -1,0 +1,10 @@
+<h1>Edit {{friend.firstname}} {{friend.lastname}}!</h1>
+<div>
+  <!-- Appropriate inputs here! -->
+      <label>First Name:</label>{{friend.firstname}}</br>
+      <label>Last Name:</label>{{friend.lastname}}<br>
+      <label>Birthday:</label>{{friend.birthday.slice(0,10)}}<br>
+      <label>Created At:</label>{{friend.createdAt.slice(0,10)}}
+</div>
+
+<a href='#/newfriends'>Add Friends</a>

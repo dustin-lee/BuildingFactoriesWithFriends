@@ -1,0 +1,13 @@
+<!-- You will attach an ng-model and an ng-submit to your forms (but might want to wait until the next tab, when you have your controllers and factory) -->
+
+<h1>Edit {{friend.firstname}} {{friend.lastname}}!</h1>
+<form ng-submit='update()'>
+  <!-- Appropriate inputs here! -->
+      <label>First Name:</label>
+      <input ng-model="editedFriend.firstname" placeholder='{{friend.firstname}}'/></br>
+      <label>Last Name:</label>
+      <input ng-model="editedFriend.lastname" placeholder='{{friend.lastname}}'/><br>
+      <label>Birthday:</label>
+      <input type = 'date' ng-model="editedFriend.birthday" placeholder='{{friend.birthday.slice(0,10)}}'/><br>
+    <input type="submit" value="Update Friend">
+</form>
